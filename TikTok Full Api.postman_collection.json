@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "924c6c4b-32b6-485b-ac72-951aebac1018",
+		"name": "TikTok Full Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28537749"
+	},
+	"item": [
+		{
+			"name": "Create Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"proxy\": \"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create_device",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create_device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"emresimsekweca23231@gmail.com\",\r\n    \"password\": \"F87892Test*1\",\r\n    \"proxy\": \"\",\r\n    \"device\": {\r\n    \"data\": {\r\n        \"_gen_time\": 1735472049041,\r\n        \"custom\": {\r\n            \"device_id\": \"7453794892944344582\",\r\n            \"install_id\": \"7453795545112790789\",\r\n            \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; SM-J500N0; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n        },\r\n        \"header\": {\r\n            \"access\": \"wifi\",\r\n            \"aid\": 1340,\r\n            \"apk_first_install_time\": 1735471711463,\r\n            \"app_version\": \"36.8.3\",\r\n            \"app_version_minor\": \"\",\r\n            \"cdid\": \"29d544c3-ca38-4df9-bfb2-e346f03c1a77\",\r\n            \"channel\": \"googleplay\",\r\n            \"clientudid\": \"2e87b96b-e0c4-45c3-9535-ed34e40b9a09\",\r\n            \"cpu_abi\": \"arm64-v8a\",\r\n            \"custom\": {\r\n                \"filter_warn\": 0\r\n            },\r\n            \"density_dpi\": 440,\r\n            \"device_brand\": \"samsung\",\r\n            \"device_manufacturer\": \"samsung\",\r\n            \"device_model\": \"SM-J500N0\",\r\n            \"device_platform\": \"android\",\r\n            \"display_density\": \"mdpi\",\r\n            \"display_name\": \"TikTok Lite\",\r\n            \"gaid_limited\": 0,\r\n            \"git_hash\": \"f97dc5ed\",\r\n            \"google_aid\": \"77358e8a-0dc3-4e86-9712-8cd68b5ffae7\",\r\n            \"is_system_app\": 0,\r\n            \"language\": \"tr\",\r\n            \"manifest_version_code\": 360803,\r\n            \"not_request_sender\": 0,\r\n            \"openudid\": \"21ad73ca4a9075d0\",\r\n            \"os\": \"Android\",\r\n            \"os_api\": 31,\r\n            \"os_version\": \"12\",\r\n            \"package\": \"com.zhiliaoapp.musically.go\",\r\n            \"region\": \"TR\",\r\n            \"release_build\": \"ae1078e_20241118\",\r\n            \"req_id\": \"1f54a451-bd5f-4964-952e-5ec15c613e4c\",\r\n            \"resolution\": \"2134x1080\",\r\n            \"rom\": \"343b929270056e28\",\r\n            \"rom_version\": \"TP1A.220624.014.a05fb5b508ad2917\",\r\n            \"sdk_flavor\": \"global\",\r\n            \"sdk_target_version\": 29,\r\n            \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n            \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n            \"timezone\": 3,\r\n            \"tz_name\": \"Europe/Istanbul\",\r\n            \"tz_offset\": 10800,\r\n            \"update_version_code\": 360803,\r\n            \"version_code\": 360803\r\n        }\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create_account",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create_account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n  \"data\": {\r\n        \"account\": \"user43117044615783:F87892Test*1:emresimsekweca23231@gmail.com\",\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdP17Bh8p0r_RCrxTkOv4QNYNrCZA\",\r\n            \"multi_sids\": \"7453801633143604242%3A9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"odin_tt\": \"d76ba0b88e7718304308fa88bdb907c74eda61d2055c59240821bbedc2ef79dd8ccaedd020876394ca8e4cd581c7a7349cfa483c9e98624358662b522b2262f0439217332d3a2b3be351b149640910b9\",\r\n            \"sessionid\": \"9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"sessionid_ss\": \"9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"sid_guard\": \"9f084fe4820e8f9324ef954a9a7fbd38%7C1735473625%7C15552000%7CFri%2C+27-Jun-2025+12%3A00%3A25+GMT\",\r\n            \"sid_tt\": \"9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"D1K9yrUNrTkvx2qt7nLfQiosSYHs2f4F009kVROHHFG9afZSjGUsM0lOBISX0I8F_mYDdwfT9IPcCvnccBOseptz7nzuP1wh-HQ7aHfx91envusPHh5o-hMjfmyWu14VwCKCKUb5HxjeW1JjJM-Up7-WwY5n84OIgkGV7SZQgty8VHiRhyC8Rquw1h-71ZtGs2owgeAWQHG-f9GmB-OTAGd5IlzVTaAY7oy7EQhynpYLYMKA0_gCUoh1nvSeSCoe4NzE3X_wkGfea9YknZfrfQrBnISA7nHzPVfi1W9a0uscg8zDaktpUA8BQSntND3VhPoK3Zrgc8piDX8CEBjVtlPjeSoBfu1dx_rkAgsr-qhCe8L8qhvRshzlr2DJoHWv7-8kNkm-QArq5ujgLoVX6T8C2FK2peMcOdVQlrwnKJSXEIxDOi0FUh2rGFA90RtLdMKFYyKNC0jE5vMNU9RIX3NSl-SwXUEfq5Mt-aE3axBDJjO3er-pVyJcjpG47sEK\",\r\n            \"uid_tt\": \"9944154dd6e510ff49f6a907bcfd0163878fd9424dab55f226446f2f88ddbfae\",\r\n            \"uid_tt_ss\": \"9944154dd6e510ff49f6a907bcfd0163878fd9424dab55f226446f2f88ddbfae\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/jhhkpvwiqgisfyb91y74rxirhpbcr5tv~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"e***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user43117044615783\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7453801633143604242,\r\n            \"old_user_id_str\": \"7453801633143604242\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user43117044615783\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAAOAOkdbjoTaNr9CfUyT70o26EQVwdhd_uxnsTVjwjmqX6X9p5l7x13FM4_ZZG7aNK\",\r\n            \"sec_user_id\": \"MS4wLjABAAAAOAOkdbjoTaNr9CfUyT70o26EQVwdhd_uxnsTVjwjmqX6X9p5l7x13FM4_ZZG7aNK\",\r\n            \"session_key\": \"9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7453801633143604242,\r\n            \"user_id_str\": \"7453801633143604242\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1735472049041,\r\n            \"custom\": {\r\n                \"device_id\": \"7453794892944344582\",\r\n                \"install_id\": \"7453795545112790789\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; SM-J500N0; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1735471711463,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"29d544c3-ca38-4df9-bfb2-e346f03c1a77\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"2e87b96b-e0c4-45c3-9535-ed34e40b9a09\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"samsung\",\r\n                \"device_manufacturer\": \"samsung\",\r\n                \"device_model\": \"SM-J500N0\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"77358e8a-0dc3-4e86-9712-8cd68b5ffae7\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"21ad73ca4a9075d0\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"1f54a451-bd5f-4964-952e-5ec15c613e4c\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"343b929270056e28\",\r\n                \"rom_version\": \"TP1A.220624.014.a05fb5b508ad2917\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdP17Bh8p0r_RCrxTkOv4QNYNrCZA\",\r\n            \"X-Tt-Multi-Sids\": \"7453801633143604242%3A9f084fe4820e8f9324ef954a9a7fbd38\",\r\n            \"X-Tt-Token\": \"039f084fe4820e8f9324ef954a9a7fbd380450a87b493867a9aa59df56d5f7edce5ea54e98bd4d14fea32af5a4939840d80b0389ef5e9845b9dbf5d74f376961893cef0640074615d632695757879e1e6bc8a268eab6e63570a95b6a52eb47099fdf5-CkBlMDY3OGRmY2ExMzVhOTY0NjlhNTVlYjYwZmI1MjBlNDgwMWNjZDcyZGZkZjFhNDU4ODJhNWE2MzAwZmYxMWUw-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    }\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Profil",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"opsiyon\": \"name,username,bio\",\r\n    \"name\": \"Perviz Şebek\",\r\n    \"username\": \"zczjds232perviz\",\r\n    \"bio\": \"-_-\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/change_profil",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"change_profil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\": \"7442432129235012882\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_like",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Follow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"\",\r\n    \"sec_user_id\": \"\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\"data\": {\"cookies\": {\"cmpl_token\": \"AgQQAPOGF-ROXbdQPp-K4N0__Q9Wo17fv4cNYNrIsQ\", \"multi_sids\": \"7453123372328813574%3Aa2f4537748424e294ab96089258a1f43\", \"odin_tt\": \"bdd605c22fbb011b54d7ee3ed5ed04c38090ac73ccea6e79f00eef15e06f13ddc288fdc3b67621e907a539c49af5c2236a8bce16267ec4fcf7c9c42e3f41782dcb7c805a7af6275b6a8f7751f00001a1\", \"sessionid\": \"a2f4537748424e294ab96089258a1f43\", \"sessionid_ss\": \"a2f4537748424e294ab96089258a1f43\", \"sid_guard\": \"a2f4537748424e294ab96089258a1f43%7C1735315558%7C15552000%7CWed%2C+25-Jun-2025+16%3A05%3A58+GMT\", \"sid_tt\": \"a2f4537748424e294ab96089258a1f43\", \"store-country-code\": \"tr\", \"store-country-code-src\": \"uid\", \"store-idc\": \"alisg\", \"tt-target-idc\": \"alisg\", \"tt-target-idc-sign\": \"kiMPrSl0vjgOAKDX7uMf0U4JDZAON1pNMRr7gmYVim-x-r1d0Rp6_8ZtBQzdCJJBpOEvD1_X9Er1Uun20DZ8BLl-PbYwzD5r0VcOV0P5zdd4ZglG7qZ5S7Pm0BNLzNDDqNHlkIQFo0U9ebiAVJox3La7TXjH7OUqjlWRLubEwcjC9fmRkyAYp2cmLga7viWE_j32pXld3nIiQqZotpb5q22J93htvrqT_XE9505q8gZwWaCpUwa0XmrhIbSkPoYltubZfsP7cAYhxwZv7KCBHaSZMzlGKSoy0HT13RnxEaUoOr7Erd0us2DczDlQiBWDDyM_-0sqOKQi03_JUMbQnxD-REc0J9Z-Amj68Bb_Iem623y6bDbhNhAGHUlyqDJIZLJq3qrKi8MjAIrohj0eMeBfukdsWo-VrOW7WeDBrtR24F_izepElfdJXlLHVxHFstTiyPTxmx4HgbvQVCbfRWTcbNrSEwU3xQ66TCVfxweWN5u2leDlfH1YTvMoyrRn\", \"uid_tt\": \"2ab514e394db33cf3bc6c74cf36054ab477e57f5bec7555bb9f682e6bb71429a\", \"uid_tt_ss\": \"2ab514e394db33cf3bc6c74cf36054ab477e57f5bec7555bb9f682e6bb71429a\"}, \"data\": {\"age_verification_type\": 0, \"app_id\": 1340, \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\", \"biz_user_info_demotion\": 0, \"biz_user_info_string\": \"\", \"cloud_token\": \"\", \"cmpl_check_box_type\": 1, \"cmpl_privacy_highlights\": 0, \"cmpl_private_account_prompt\": 0, \"connects\": [], \"country_code\": 0, \"device_id\": 0, \"email\": \"a***0@gmail.com\", \"email_collected\": true, \"expired_uid_list\": null, \"google_odm_infos\": null, \"has_password\": 0, \"id_token\": \"\", \"id_token_id\": \"\", \"is_kids_mode\": 0, \"is_only_bind_ins\": false, \"is_org_tt_account\": false, \"login_domain\": \"\", \"mobile\": \"\", \"name\": \"user9937129996169\", \"need_device_create\": 0, \"need_ttwid_migration\": 0, \"new_user\": 1, \"oidc_android_client_package_sigs\": null, \"oidc_device_secret\": \"\", \"oidc_error_code\": 0, \"oidc_error_message\": \"\", \"oidc_next\": \"\", \"old_user_id\": 7453123372328813574, \"old_user_id_str\": \"7453123372328813574\", \"org_tt_account_type\": 0, \"phone_collected\": false, \"screen_name\": \"user9937129996169\", \"sec_old_user_id\": \"MS4wLjABAAAAit6xY8x3YPLNfrxj5XtsWGKqfx-tFZBv-lEF3Vlh9V3pZljSAovKVx19Tbm53IXk\", \"sec_user_id\": \"MS4wLjABAAAAit6xY8x3YPLNfrxj5XtsWGKqfx-tFZBv-lEF3Vlh9V3pZljSAovKVx19Tbm53IXk\", \"session_key\": \"a2f4537748424e294ab96089258a1f43\", \"user_create_time\": 0, \"user_device_record_status\": 0, \"user_id\": 7453123372328813574, \"user_id_str\": \"7453123372328813574\", \"user_verified\": false, \"username\": \"\"}, \"device\": {\"_gen_time\": 1735315534574, \"custom\": {\"device_id\": \"7453122654774527493\", \"install_id\": \"7453123367173703430\", \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; SM-G5510; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"}, \"header\": {\"access\": \"wifi\", \"aid\": 1340, \"apk_first_install_time\": 1735315135275, \"app_version\": \"36.8.3\", \"app_version_minor\": \"\", \"cdid\": \"35a41190-e542-480d-93ec-76b72c20978d\", \"channel\": \"googleplay\", \"clientudid\": \"14c359ed-6bce-4329-892e-76b4ea129a9a\", \"cpu_abi\": \"arm64-v8a\", \"custom\": {\"filter_warn\": 0}, \"density_dpi\": 440, \"device_brand\": \"samsung\", \"device_manufacturer\": \"samsung\", \"device_model\": \"SM-G5510\", \"device_platform\": \"android\", \"display_density\": \"mdpi\", \"display_name\": \"TikTok Lite\", \"gaid_limited\": 0, \"git_hash\": \"f97dc5ed\", \"google_aid\": \"ec453127-0324-462b-892c-f8554b199b06\", \"is_system_app\": 0, \"language\": \"tr\", \"manifest_version_code\": 360803, \"not_request_sender\": 0, \"openudid\": \"b8d35394a2c07370\", \"os\": \"Android\", \"os_api\": 31, \"os_version\": \"12\", \"package\": \"com.zhiliaoapp.musically.go\", \"region\": \"TR\", \"release_build\": \"ae1078e_20241118\", \"req_id\": \"6c9e541a-f19c-4def-8393-1e4f39686ee5\", \"resolution\": \"2134x1080\", \"rom\": \"2245e730817b7726\", \"rom_version\": \"TP1A.220624.014.ed8891428db0048d\", \"sdk_flavor\": \"global\", \"sdk_target_version\": 29, \"sdk_version\": \"2.12.1-rc.51-tiktok\", \"sig_hash\": \"aea615ab910015038f73c47e45d21466\", \"timezone\": 3, \"tz_name\": \"Europe/Istanbul\", \"tz_offset\": 10800, \"update_version_code\": 360803, \"version_code\": 360803}}, \"headers\": {\"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdQPp-K4N0__Q9Wo17fv4cNYNrIsQ\", \"X-Tt-Multi-Sids\": \"7453123372328813574%3Aa2f4537748424e294ab96089258a1f43\", \"X-Tt-Token\": \"03a2f4537748424e294ab96089258a1f430138323ea2c8e67e268f104cf1ae35480c8b478b9e0e7951c17b977141f241e400bf599b87b99e3a7189cf0c5f6f49c7904fe8d5d299556a0c0c872fc027f6e36ec465eebf641c18fc3b76520419b5ff29e-CkA3NTQxOWVlMzlmZDVhNWVhYTIyZWZkM2E4M2VmNzkyOTVlMDE2NDU1NmYzZDRlZjJmNGMyMmI3MDIwOGYzNTI5-2.0.0\"}, \"status\": true}}\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_follow",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_follow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\": \"7442432129235012882\",\r\n    \"comment\": \"test hiddenexe!\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_comment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send View",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\": \"7442432129235012882\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_view",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Share",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\": \"7442432129235012882\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_share",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_share"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_id\": \"7442432129235012882\",\r\n    \"proxy\": \"\",\r\n    \"account\": {\r\n    \"data\": {\r\n        \"cookies\": {\r\n            \"cmpl_token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"multi_sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"odin_tt\": \"50170d57991d5ca297b75c768cb97836045534736c7eacdd55ba37a4513477761f7033c88973e23db1fadd23aa5d50d72c49ee993b9506680eb8cc482bb9213a019a3c643acace6013a4229e76b26271\",\r\n            \"sessionid\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sessionid_ss\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"sid_guard\": \"8cad6a11fe9af338da082e65890cd181%7C1734968596%7C15552000%7CSat%2C+21-Jun-2025+15%3A43%3A16+GMT\",\r\n            \"sid_tt\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"store-country-code\": \"tr\",\r\n            \"store-country-code-src\": \"uid\",\r\n            \"store-idc\": \"alisg\",\r\n            \"tt-target-idc\": \"alisg\",\r\n            \"tt-target-idc-sign\": \"KN_Sf1h9QoX2tg7lP8HAZw6uAvi2DehiCW3ATzbtnGIr6iL60O1kLImBct78Vcu5GlIOZ7ebJDMcLAZmfCD5vXBCmkcxofjhLae2-B0POYXYUyPhv2ClLIZiwoK-vIgvdglCwc5lIh-OyTVYxM-stc2K-TSkLk7T-LGz7ZDVjPZTFRH0YjPWrpni5rxyBcPzKVzFzhymE3Gb7Djjpdlsleqka17_zfQzrkZhXWImTA9hX-f3Udg5r7TW4wv4CD6vHgtG1Dmro7pPGqdWhajtnGNynzrEIr6v9hJHdXBdKUjKUVSkijY3Y3soGReP6kzB2fxyG721ahe8UXallfJ0jXyhZ_ifPiUvHZpFAl94lNO3lIX7rSwrdpRfqpFQoDby7vpoqI5XzXs6FjHUjjTOawQE6iO0drdCucquhh14n1AZ7EbLFnecVKK0A2WaR6UdFdhn8zgaA1r2LMwyxYCx8voqcr18Xup1MFPi9qyM1qg3vNU45un_S7XnLYS4Qo1z\",\r\n            \"uid_tt\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\",\r\n            \"uid_tt_ss\": \"51dfc34081443918928589c259b56cd7399a3494ee75f36d1ddadd6252ccaa0a\"\r\n        },\r\n        \"data\": {\r\n            \"age_verification_type\": 0,\r\n            \"app_id\": 1340,\r\n            \"avatar_url\": \"https://p16-sg.tiktokcdn.com/img/user-avatar-alisg/9dz22qmo1ji0vlk6w8dvlf4hiqh90tns~120x256.image\",\r\n            \"biz_user_info_demotion\": 0,\r\n            \"biz_user_info_string\": \"\",\r\n            \"cloud_token\": \"\",\r\n            \"cmpl_check_box_type\": 1,\r\n            \"cmpl_privacy_highlights\": 0,\r\n            \"cmpl_private_account_prompt\": 0,\r\n            \"connects\": [],\r\n            \"country_code\": 0,\r\n            \"device_id\": 0,\r\n            \"email\": \"c***1@gmail.com\",\r\n            \"email_collected\": true,\r\n            \"expired_uid_list\": null,\r\n            \"google_odm_infos\": null,\r\n            \"has_password\": 0,\r\n            \"id_token\": \"\",\r\n            \"id_token_id\": \"\",\r\n            \"is_kids_mode\": 0,\r\n            \"is_only_bind_ins\": false,\r\n            \"is_org_tt_account\": false,\r\n            \"login_domain\": \"\",\r\n            \"mobile\": \"\",\r\n            \"name\": \"user14241221946153\",\r\n            \"need_device_create\": 0,\r\n            \"need_ttwid_migration\": 0,\r\n            \"new_user\": 1,\r\n            \"oidc_android_client_package_sigs\": null,\r\n            \"oidc_device_secret\": \"\",\r\n            \"oidc_error_code\": 0,\r\n            \"oidc_error_message\": \"\",\r\n            \"oidc_next\": \"\",\r\n            \"old_user_id\": 7451632431964587014,\r\n            \"old_user_id_str\": \"7451632431964587014\",\r\n            \"org_tt_account_type\": 0,\r\n            \"phone_collected\": false,\r\n            \"screen_name\": \"user14241221946153\",\r\n            \"sec_old_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"sec_user_id\": \"MS4wLjABAAAA5vryMAjCLb0K7eot-GJcmqGBr9EvczqghXlD5OefE4MUoetlwmJ-Dz4zh5YcRH_i\",\r\n            \"session_key\": \"8cad6a11fe9af338da082e65890cd181\",\r\n            \"user_create_time\": 0,\r\n            \"user_device_record_status\": 0,\r\n            \"user_id\": 7451632431964587014,\r\n            \"user_id_str\": \"7451632431964587014\",\r\n            \"user_verified\": false,\r\n            \"username\": \"\"\r\n        },\r\n        \"device\": {\r\n            \"_gen_time\": 1734968401266,\r\n            \"custom\": {\r\n                \"device_id\": \"7451631605968143878\",\r\n                \"install_id\": \"7451632366710441734\",\r\n                \"user_agent\": \"com.zhiliaoapp.musically.go/360803 (Linux; U; Android 12; tr_TR; M2004J19C; Build/SP1A.210812.016;tt-ok/3.12.13.24-ul)\"\r\n            },\r\n            \"header\": {\r\n                \"access\": \"wifi\",\r\n                \"aid\": 1340,\r\n                \"apk_first_install_time\": 1734967950636,\r\n                \"app_version\": \"36.8.3\",\r\n                \"app_version_minor\": \"\",\r\n                \"cdid\": \"4340fe5f-69d7-404a-b340-825a4ba38010\",\r\n                \"channel\": \"googleplay\",\r\n                \"clientudid\": \"f0f68f32-5255-41b9-be42-e4aeef0c9c6b\",\r\n                \"cpu_abi\": \"arm64-v8a\",\r\n                \"custom\": {\r\n                    \"filter_warn\": 0\r\n                },\r\n                \"density_dpi\": 440,\r\n                \"device_brand\": \"Redmi\",\r\n                \"device_manufacturer\": \"Xiaomi\",\r\n                \"device_model\": \"M2004J19C\",\r\n                \"device_platform\": \"android\",\r\n                \"display_density\": \"mdpi\",\r\n                \"display_name\": \"TikTok Lite\",\r\n                \"gaid_limited\": 0,\r\n                \"git_hash\": \"f97dc5ed\",\r\n                \"google_aid\": \"1e6d4f51-4d40-4255-bd0f-854b5065d4a3\",\r\n                \"is_system_app\": 0,\r\n                \"language\": \"tr\",\r\n                \"manifest_version_code\": 360803,\r\n                \"not_request_sender\": 0,\r\n                \"openudid\": \"a8f3f9182bf0b5fd\",\r\n                \"os\": \"Android\",\r\n                \"os_api\": 31,\r\n                \"os_version\": \"12\",\r\n                \"package\": \"com.zhiliaoapp.musically.go\",\r\n                \"region\": \"TR\",\r\n                \"release_build\": \"ae1078e_20241118\",\r\n                \"req_id\": \"316dcaf1-c2bc-4a26-8727-81a834593ed1\",\r\n                \"resolution\": \"2134x1080\",\r\n                \"rom\": \"MIUI-V13.0.2.0.SJCMIXM\",\r\n                \"rom_version\": \"miui_V130_V13.0.2.0.SJCMIXM\",\r\n                \"sdk_flavor\": \"global\",\r\n                \"sdk_target_version\": 29,\r\n                \"sdk_version\": \"2.12.1-rc.51-tiktok\",\r\n                \"sig_hash\": \"aea615ab910015038f73c47e45d21466\",\r\n                \"timezone\": 3,\r\n                \"tz_name\": \"Europe/Istanbul\",\r\n                \"tz_offset\": 10800,\r\n                \"update_version_code\": 360803,\r\n                \"version_code\": 360803\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"X-Tt-Cmpl-Token\": \"AgQQAPOGF-ROXbdXapDgNV0__QgaRLlRP4QNYNqhWw\",\r\n            \"X-Tt-Multi-Sids\": \"7451632431964587014%3A8cad6a11fe9af338da082e65890cd181\",\r\n            \"X-Tt-Token\": \"038cad6a11fe9af338da082e65890cd18103ca3aa392098b0853e915ab40cda6f0d6f95b2f0471160a37c881453445875b7df77d779a74f98e2d60ab5df4a71b2fd6249d8a0b0a64f70033774e2e765b0d90598097939788964eb722f725b10ff5cf2-CkAzN2EyODA5M2JmYzlhYWU2YjNjNDcwNmZiYWY1YTRmYTM3YzViYTFjZmE0ODc5ZTIwMjg2YWVhODhjYzVkYjdj-2.0.0\"\r\n        },\r\n        \"status\": true\r\n    },\r\n    \"status\": \"success\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/send_save",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"send_save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"params\": \"\",\r\n    \"payload\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/signer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"signer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profil İnfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"testttaccount111111\",\r\n    \"proxy\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_profil_info",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_profil_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profil Counter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"testttaccount111111\",\r\n    \"proxy\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_profil_counter",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_profil_counter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Video İnfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_url\": \"https://www.tiktok.com/@testttaccount111111/video/7442432129235012882\",\r\n    \"proxy\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_video_info",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_video_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Video Counter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"video_url\": \"https://www.tiktok.com/@testttaccount111111/video/7442432129235012882\",\r\n    \"proxy\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://127.0.0.1:5000/get_video_counter",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_video_counter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
