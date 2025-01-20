@@ -151,10 +151,10 @@ class TikTokApi:
     def captcha_solver(self, video_id: str, device: dict):
         payload = json.dumps({
             "proxy": self.proxy,
-            "device": account
+            "device": device
         })
         response = requests.post(
-            f"{self.api_url}device",
+            f"{self.api_url}captcha_solver",
             headers=self.headers,
             data=payload
         ).json()
