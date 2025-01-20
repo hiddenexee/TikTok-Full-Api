@@ -32,6 +32,19 @@ class TikTokApi:
 
         return response
 
+    def login(self, video_id: str, device: dict):
+        payload = json.dumps({
+            "proxy": self.proxy,
+            "device": account
+        })
+        response = requests.post(
+            f"{self.api_url}device",
+            headers=self.headers,
+            data=payload
+        ).json()
+
+        return response
+
     def change_profil(self, name: str, username: str, bio: str, account: dict):
         payload = json.dumps({
             "opsiyon": "name,username,bio",
@@ -135,5 +148,17 @@ class TikTokApi:
 
         return response
 
+    def captcha_solver(self, video_id: str, device: dict):
+        payload = json.dumps({
+            "proxy": self.proxy,
+            "device": account
+        })
+        response = requests.post(
+            f"{self.api_url}device",
+            headers=self.headers,
+            data=payload
+        ).json()
+
+        return response
 
 
