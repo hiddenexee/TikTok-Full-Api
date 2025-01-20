@@ -32,7 +32,7 @@ class TikTokApi:
 
         return response
 
-    def login(self, video_id: str, device: dict):
+    def login(self, device: dict):
         payload = json.dumps({
             "proxy": self.proxy,
             "device": device
@@ -148,7 +148,7 @@ class TikTokApi:
 
         return response
 
-    def captcha_solver(self, video_id: str, device: dict):
+    def captcha_solver(self, device: dict):
         payload = json.dumps({
             "proxy": self.proxy,
             "device": device
