@@ -35,10 +35,10 @@ class TikTokApi:
     def login(self, video_id: str, device: dict):
         payload = json.dumps({
             "proxy": self.proxy,
-            "device": account
+            "device": device
         })
         response = requests.post(
-            f"{self.api_url}device",
+            f"{self.api_url}login",
             headers=self.headers,
             data=payload
         ).json()
